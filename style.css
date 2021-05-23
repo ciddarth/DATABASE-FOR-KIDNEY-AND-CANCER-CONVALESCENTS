@@ -1,0 +1,28 @@
+#banner img
+{
+height:140px;
+width:25%;
+float:left;
+}
+
+#left h2
+{
+	float:left;
+	position: absolute;
+	padding-top: 50px;
+	font-family:"Lato Black" ,sans-serif;
+	font-size:120px;
+}
+ #left h2
+ {
+	 color:#FF8C00;
+ }
+#left p
+{
+	float:left;
+	position: absolute;
+	padding-top: 300px;
+	font-family:"Book Antiqua" ,sans-serif;
+	font-size:25px;
+	color:#1CB1BD;
+}
