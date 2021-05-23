@@ -1,0 +1,148 @@
+<!Doctype html>
+<head>
+<title>Login page</title>
+<link rel="stylesheet" type="text/css" href="C:\Users\DELL\Desktop\project web\style.css" />
+<script>
+function myFunction()
+{
+var user = document.forms["myForm"]["Username"].value;
+var pass = document.forms["myForm"]["Password"].value;
+if(user=="admin" && pass=="root")
+{
+    window.location.href="homepage.html";
+}
+else
+{
+alert("Invalid Username or Password")
+}
+}
+</script>
+<style>
+body
+{
+background:white;
+}
+
+.div1
+{
+width:350px;
+margin:auto;
+margin:10 0 0 450px;
+overflow:hidden;
+padding:85px;
+background:#D3D3D3;
+box-shadow: 0 19px 23px rgba(0,0,0,.8);
+}
+
+h2{
+text-align:center;
+padding:10px;
+color:black;
+}
+
+label
+{
+color:black;
+padding-left:10px;
+font-family:"Elephant" ,sans-serif;
+font-size:18px;
+}
+
+.inputText
+{
+width:300px;
+height:30px;
+border:none;
+border-radius:2px;
+padding-left:8px;
+}
+
+#logButton
+{
+width:300px;
+height:45px;
+border:none;
+border-radius:10px;
+padding-left:7px;
+color:blue;
+font-family:"Roboto" ,sans-serif;
+font-size:18px;
+background: #1E90FF;
+text-align:center;
+text-decoration: none;
+cursor:pointer;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+-webkit-tranition-duration: 0.3s;
+transition-duration:0.3s;
+-webkit-transition-property: box-shadow, transform;
+transition-property:box-shadow, transform;
+}
+
+#logButton:hover, #logButton:focus, #logButton:active{
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform:scale(1.1);
+    transform:scale(1,1);
+}
+
+input[type=text]{
+    border:2px solid #aaa;
+    height:40px;
+    width:300px;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+}
+
+input[type=text]:focus{
+    border-color:dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;;
+}
+
+input[type=password]{
+    border:2px solid #aaa;
+    height:40px;
+    width:300px;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+}
+
+input[type=password]:focus{
+    border-color:dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;;
+}
+
+
+</style>
+
+</head>
+<body>
+    <marquee bgcolor="EBEBEB">WE ARE FOLLOWING THE GUIDELINES OF "WHO" PLEASE STAY HOME STAY SAFE #COVID19 #STAY_AT_HOME,REGARDS LIFE LINE HOSPITAL</marquee>
+<div id="banner">
+     <img src="C:\Users\DELL\Desktop\project web\images\newlog1.png">
+</div>
+<div id="left">
+    <h2>Welcome!</h2>
+	<p>"Healing in a matter of time, but it is sometimes<br> also a matter of opportunity."</p>
+</div>
+<h2>LOGIN PAGE</h2>
+<div class="div1">
+<form name="myForm" method="post">
+<label>USER NAME</label>
+<input type="text" name="Username" class="inputText" placeholder="User Name">
+<br><br>
+<label>PASSWORD</label>
+<input type="password" name="Password" class="inputText" placeholder="Password">
+<br><br>
+
+<input type="button" name="log" id="logButton" value="Login" onclick="myFunction()">
+<br><br>
+</div>
+</body>
+</html>
